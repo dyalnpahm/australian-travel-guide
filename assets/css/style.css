@@ -1,0 +1,17 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 5%;
+
+}
+
+.rotate1 {
+    width: 180px;
+    height: 400px;
+    margin: 0 0 0 200px;
+    font-size: 18px;
+    color: brown;
+    background-color: lightgray;
+    transform: rotate(90deg);
+    }
