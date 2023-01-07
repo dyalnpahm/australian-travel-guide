@@ -2,16 +2,53 @@
 *{
     box-sizing: border-box;
     padding: 0;
-    margin: 5%;
+    margin: 0;
 
 }
+.beginning{
+    padding-top: 60px;
+}
 
-.rotate1 {
-    width: 180px;
-    height: 400px;
-    margin: 0 0 0 200px;
-    font-size: 18px;
-    color: brown;
-    background-color: lightgray;
-    transform: rotate(90deg);
-    }
+#destination{
+    padding-top: 1%;
+    padding-left: 1%;
+}
+
+.vertical-rl {
+    writing-mode: vertical-rl;
+    padding-top: 100px;
+    padding-left: 1%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+
+
+
+
+.row img{
+	width: 90% ;
+	height: 95% ;
+}
+
+	 
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.row {
+	display: flex;
+    padding-top: 5%;
+}
+	  
+.column {
+	flex: 33%;
+	padding: 5px;
+    float: left;
+	width: 100%;
+    position: relative;
+		
+}
+
+
