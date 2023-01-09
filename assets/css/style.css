@@ -126,7 +126,7 @@
     font-size: 30px;
     margin-right: 15px;
     color: #ababab;
-    display: block;
+    display: inline-block;
     transition: transform 0.5s;
 }
 .social-icons a:hover{
@@ -165,8 +165,11 @@ form .btn2{
     font-weight: 300;
     margin-top: 20px;
 }
+.copyright p{
+    color: white;
+}
 .copyright i{
-    color: #ff004f;
+    color: #de1850;
 }
 #msg{
     color: #61b752;
