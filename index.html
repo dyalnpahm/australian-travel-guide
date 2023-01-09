@@ -22,7 +22,7 @@
   <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
       
 
-    <a href="#" class="navbar-brand mb-0 h1">
+    <a href="index.html" class="navbar-brand mb-0 h1">
       <img 
       class="d-inline-block align-top"
       src="./assets/images/luggage.png"
@@ -45,7 +45,7 @@
     id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a href="#" class="nav-link active">
+        <a href="index.html" class="nav-link active">
           Home
 
         </a>
@@ -62,22 +62,18 @@
         </a>
         <ul class="dropdown-menu"
         aria-labelledby="navbarDropdown">
-        <li><a href="#"
+        <li><a href="sydney.html"
         class="dropdown-item">New South Wales </a></li>
-        <li><a href="#"
+        <li><a href="melbourne.html"
           class="dropdown-item">Victoria </a></li>
-        <li><a href="#"
+        <li><a href="queensland.html"
           class="dropdown-item">Queensland </a></li>
-        <li><a href="#"
+        <li><a href="perth.html"
           class="dropdown-item">western Australia</a></li>
-        <li><a href="#"
-          class="dropdown-item">Tasmania</a></li>
-        <li><a href="#"
-          class="dropdown-item">South Australia</a></li>
         </ul>
       </li>
       <li class="nav-item active">
-        <a href="#" class="nav-link">
+        <a href="#about" class="nav-link">
           About
         </a>
       </li>
@@ -107,15 +103,15 @@
 <div class="container">
   <div class="row">
     <div class="column">
-        <a href="#"><img src="./assets/images/Sydney Waters.jpg" alt="Sydney" ></a>
+        <a href="sydney.html"><img src="./assets/images/Sydney Waters.jpg" alt="Sydney" ></a>
         <div id="NSW" class="vertical-rl">New South Wales</div>
     </div>
     <div class="column">
-        <a href="#"><img src="./assets/images/Melbourne.jpg" alts="Victoria" ></a>
+        <a href="melbourne.html"><img src="./assets/images/Melbourne.jpg" alts="Victoria" ></a>
         <div id="VIC" class="vertical-rl">Victoria</div>
     </div>
     <div class="column">
-      <a href="#"><img src="./assets/images/Queensland.jpg" alts="Gold-Coast" ></a>
+      <a href="queensland.html"><img src="./assets/images/Queensland.jpg" alts="Gold-Coast" ></a>
       <div id="QLD" class="vertical-rl">Queensland</div>
   </div>
     </div>
@@ -130,7 +126,7 @@
 <div class="container">
   
     <div class="western">
-        <a href="#destinations"><img src="./assets/images/Perth.jpg" alt="Western Australia"></a>
+        <a href="perth.html"><img src="./assets/images/Perth.jpg" alt="Western Australia"></a>
         <div id="WA" class="vertical-rl">Western Australia</div>
     </div>
     </div>
@@ -142,7 +138,7 @@
 </main>
 
 <footer class="footer bg-light">
-<h3>About Us</h3>
+<h3 id="about">About Us</h3>
 <p>We provide recommendations on travel destinations for all parts of Australia and allow others to share their experiences and reviews on those locations to allow other 
   travellers to discover the perfect destination  </p>
 
@@ -153,8 +149,8 @@
       <div class="row">
           <div class="contact-left">
               <h1 class="sub-title">Contact Us</h1>
-              <p><i class="fa fa-solid fa-paper-plane"></i> contact@example.com</p>
-              <p><i class="fa fa-solid fa-phone"></i>0414252751</p>
+              <p><i class="fa fa-solid fa-paper-plane"></i>dyalnpahm@gmail.com</p>
+              <p><i class="fa fa-solid fa-phone"></i>0470422539</p>
               <div class="social-icons">
                   <a href=""><i class="fa fa-brands fa-facebook"></i></a>
                   <a href=""><i class="fa fa-brands fa-twitter-square"></i></a>
@@ -174,56 +170,11 @@
       </div>
   </div>
   <div class="copyright">
-      <p>Copyright <i class="fa fa-regular fa-copyright"></i> TraUvel</p>
+      <p>Copyright <i class="fa fa-regular fa-copyright"></i> TrAUvel</p>
   </div>
 </div>
-<script>
-
-  var tablinks = document.getElementsByClassName("tab-links");
-  var tabcontents = document.getElementsByClassName("tab-contents");
-
-  function opentab(tabname){
-      for(tablink of tablinks){
-          tablink.classList.remove("active-link");
-      }
-      for(tabcontent of tabcontents){
-          tabcontent.classList.remove("active-tab");
-      }
-      event.currentTarget.classList.add("active-link");
-      document.getElementById(tabname).classList.add("active-tab");
-  }
-
-</script>
-<script>
-
-  var sidemenu = document.getElementById("sidemenu");
-
-  function openmenu(){
-      sidemenu.style.right= "0";
-  }
-  function closemenu(){
-      sidemenu.style.right= "-200px";
-  }
-</script>
-
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwCR9zi4oRYGDso36Yyhxygu61jlX5UFI2XyhngFPKdy4oT-TNfEPQM9mrJzUonJFFr/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML = "Message sent successfully"
-        setTimeout(function(){
-          msg.innerHTML = ""
-        },5000)
-        form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
+<script src="js/script.js"></script>
+ 
 
 
 
