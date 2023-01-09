@@ -19,12 +19,13 @@
 .motto{
     font-size: 40px;
     border-radius: 10px 10px 25px 20px;
-    background: lightblue;
+    background: #1E7CCF;
     padding: 20px;
     width: 400px;
     height: 100px;
     color: white;
-    font-family: sans-serif;
+    font-family: 'Oleo Script', cursive;
+
     
 
 }
@@ -33,7 +34,8 @@
     padding-top: 0.5%;
     padding-left: 1.5%;
     font-size: 40px;
-    font-family: sans-serifz;
+    font-family: 'Oleo Script', cursive;
+
 }
 
 .vertical-rl {
