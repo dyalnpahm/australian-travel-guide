@@ -101,7 +101,10 @@
     padding: 5%
 }
 
-  .contact-left{
+
+/*------ contact -----*/
+
+.contact-left{
     flex-basis: 35%;
 }
 .contact-right{
