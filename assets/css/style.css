@@ -6,14 +6,36 @@
 
 }
 .beginning{
-    padding-top: 60px;
+    padding-top: 70px;
+}
+.container a {
+    background-color: aliceblue;
+    transition: background-color 0.5s;
+  }
+.container a:hover {
+	opacity: 40%;
+	background-color: aliceblue;
+}
+.motto{
+    font-size: 40px;
+    border-radius: 10px 10px 25px 20px;
+    background: #1E7CCF;
+    padding: 20px;
+    width: 400px;
+    height: 100px;
+    color: white;
+    font-family: 'Oleo Script', cursive;
+
+    
+
 }
 
-
-
 #destination{
-    padding-top: 1%;
-    padding-left: 1%;
+    padding-top: 0.5%;
+    padding-left: 1.5%;
+    font-size: 40px;
+    font-family: 'Oleo Script', cursive;
+
 }
 
 .vertical-rl {
@@ -53,14 +75,32 @@
 		
 }
 
+.western {
+    position: relative;
+    display:table;
+    width: 500px;
+    height: 100%;
+    float: left;
+    display: flex;
+    padding-top: 3%;
+
+}
+
+.western img {
+    width: 1260px;
+    height: 100%;
+    
+}
+
 .end {
-    margin-bottom: 200px;
+    margin-bottom: 800px;
 }
 
 
 .footer{
     padding: 5%
 }
+
 
 /*------ contact -----*/
 
