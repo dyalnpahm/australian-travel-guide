@@ -1,3 +1,16 @@
+$(document).ready(function() {
+  $("[list='my-list']").on("input propertychange", function() {
+    window.location = $("#my-list option[value='"+$("[list='my-list']").val()+"']").find("a").attr("href")
+  });
+});
+
+
+
+
+
+
+
+//Comment section//
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
