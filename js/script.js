@@ -21,7 +21,12 @@ $(document).ready(function() {
 });
 
 
+const dropdownToggle = document.querySelector('[data-bs-toggle="dropdown"]');
+const dropdownMenu = document.querySelector('.dropdown-menu');
 
+dropdownToggle.addEventListener('click', function() {
+  dropdownMenu.classList.toggle('open');
+});
 
 
 
