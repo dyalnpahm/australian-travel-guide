@@ -8,82 +8,90 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>TrAUvel</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  </head>
-  <body style="height:2000px">
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
-  </body>
+<script src="https://www.youtube.com/iframe_api"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+<title>TrAUvel</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body style="height:2000px">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</body>
 
-  
-  
-  <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
-      
-
-    <a href="index.html" class="navbar-brand mb-0 h1">
-      <img 
-      class="d-inline-block align-top"
-      src="./assets/images/luggage.png"
-      width="30" height="50">
-      TrAUvel
+<nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+  <a href="index.html" class="navbar-brand mb-0 h1">
+    <img class="d-inline-block align-top"
+    src="./assets/images/luggage.png"
+    width="30" height="50">
+    TrAUvel
+  </a>
+  <button 
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#navbarNav"
+  class="navbar-toggler"
+  aria-controls="navbarNav"
+  aria-expanded="false"
+  aria-label="Toggle navigation"
+  >
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" 
+id="navbarNav">
+<ul class="navbar-nav">
+  <li class="nav-item active">
+    <a href="index.html" class="nav-link active">
+      Home
     </a>
-    <button 
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#navbarNav"
-    class="navbar-toggler"
-    aria-controls="navbarNav"
+  </li>
+  <li class="nav-item dropdown">
+    <a href="#" class="nav-link 
+    dropdown-toggle" 
+    id="navbarDropdown" role="button"
+    data-bs-toggle="dropdown"
     aria-expanded="false"
-    aria-label="Toggle navigation"
     >
-    <span class="navbar-toggler-icon"></span>
+    Destinations
+  </a>
+  <ul class="dropdown-menu"
+  aria-labelledby="navbarDropdown">
+  <li><a href="sydney.html"
+    class="dropdown-item">New South Wales </a></li>
+  <li><a href="melbourne.html"     
+    class="dropdown-item">Victoria </a></li>
+  <li><a href="queensland.html"
+    class="dropdown-item">Queensland </a></li>
+  <li><a href="perth.html"
+    class="dropdown-item">Western Australia </a></li>
+  </ul>
+</li>
+<li class="nav-item active">
+  <a href="#about" class="nav-link">
+    About
+  </a>
+</li>
+</ul>
+</div>
 
-    </button>
-    <div class="collapse navbar-collapse" 
-    id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a href="index.html" class="nav-link active">
-          Home
-
-        </a>
-      </li>
-      <li class="nav-item dropdown">
-        <a href="#" class="nav-link 
-        dropdown-toggle" 
-        id="navbarDropdown" role="button"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-        >
-          Destinations
-
-        </a>
-        <ul class="dropdown-menu"
-        aria-labelledby="navbarDropdown">
-        <li><a href="sydney.html"
-        class="dropdown-item">Sydney </a></li>
-        <li><a href="melbourne.html"
-          class="dropdown-item">Victoria </a></li>
-        <li><a href="queensland.html"
-          class="dropdown-item">Queensland </a></li>
-        <li><a href="perth.html"
-          class="dropdown-item">Perth </a></li>
-        </ul>
-      </li>
-      <li class="nav-item active">
-        <a href="#about" class="nav-link">
-          About
-        </a>
-      </li>
-    </ul>
+  <div class="search">
+  <input type="text" class="input" name="my-input" list="my-list" size="30" placeholder="Search Destination">
+<datalist id="my-list">
+  <option value="New South Wales">
+    <a href="sydney.html"></a>Sydney</option>
+  <option value="Victoria">
+    <a href="melbourne.html"></a>Melbourne</option>
+  <option value="Queensland">
+    <a href="queensland.html"></a>Brisbane</option>
+  <option value="Western Australia">
+    <a href="perth.html"></a>Perth</option>
+</datalist>
+<button type="submit" class="btn-primary"><i class="fa fa-search" ></i></button>
   </div>
-
-  <form class="d-flex">
-    <input type="text" class="form-control me-2">
-    <button type="submit" class="btn btn-primary">Search</button>
-  </form>
+  
 </nav>
 </div>
 <main>
@@ -93,22 +101,24 @@
 <section>
 <center>
   <div class="motto">
-  This is your Trip
+  This is your trip
 </div>
 </center>
-
+<div class="youtube">
+  <iframe style="border-radius: 15px;" width="1280px" height="720px" src="https://www.youtube.com/embed/o6pm5zyOUnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
   <div id="destination">
     Popular Destinations
   </div>
 <div class="container">
   <div class="row">
     <div class="column">
-        <a href="sydney.html"><img src="./assets/images/Sydney Waters.jpg" alt="Sydney" ></a>
-        <div id="NSW" class="vertical-rl">New South Wales</div>
+      <a href="sydney.html"><img src="./assets/images/Sydney Waters.jpg" alt="Sydney" ></a>
+      <div id="NSW" class="vertical-rl">New South Wales</div>
     </div>
     <div class="column">
-        <a href="melbourne.html"><img src="./assets/images/Melbourne.jpg" alts="Victoria" ></a>
-        <div id="VIC" class="vertical-rl">Victoria</div>
+      <a href="melbourne.html"><img src="./assets/images/Melbourne.jpg" alts="Victoria" ></a>
+      <div id="VIC" class="vertical-rl">Victoria</div>
     </div>
     <div class="column">
       <a href="queensland.html"><img src="./assets/images/Queensland.jpg" alts="Gold-Coast" ></a>
@@ -119,13 +129,12 @@
 </section>
 
 <section>
-
   <div id="destination">
-   
+
   </div>
 <div class="container">
   
-    <div class="western">
+<div class="western">
         <a href="perth.html"><img src="./assets/images/Perth.jpg" alt="Western Australia"></a>
         <div id="WA" class="vertical-rl">Perth</div>
     </div>
@@ -152,10 +161,10 @@
               <p><i class="fa fa-solid fa-paper-plane"></i>dyalnpahm@gmail.com</p>
               <p><i class="fa fa-solid fa-phone"></i>0470422539</p>
               <div class="social-icons">
-                  <a href=""><i class="fa fa-brands fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-brands fa-twitter-square"></i></a>
-                  <a href=""><i class="fa fa-brands fa-instagram"></i></a>
-                  <a href=""><i class="fa fa-brands fa-linkedin"></i></a>
+                  <a href="https://www.facebook.com/"><i class="fa fa-brands fa-facebook"></i></a>
+                  <a href="https://twitter.com/"><i class="fa fa-brands fa-twitter-square"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fa fa-brands fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/"><i class="fa fa-brands fa-linkedin"></i></a>
               </div>
           </div>
           <div class="contact-right">

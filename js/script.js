@@ -1,3 +1,37 @@
+
+function onYouTubeIframeAPIReady() {
+  // create the YouTube player
+  player = new YT.Player('player', {
+    height: '360',
+    width: '640',
+    videoId: 'o6pm5zyOUnE',
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+}
+
+
+
+$(document).ready(function() {
+  $("[list='my-list']").on("input propertychange", function() {
+    window.location = $("#my-list option[value='"+$("[list='my-list']").val()+"']").find("a").attr("href")
+  });
+});
+
+
+const dropdownToggle = document.querySelector('[data-bs-toggle="dropdown"]');
+const dropdownMenu = document.querySelector('.dropdown-menu');
+
+dropdownToggle.addEventListener('click', function() {
+  dropdownMenu.classList.toggle('open');
+});
+
+
+
+
+//Comment section//
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
