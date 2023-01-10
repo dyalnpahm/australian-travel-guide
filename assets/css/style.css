@@ -172,7 +172,7 @@ body {
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #ff004f;
+    color: #000dff;
     transform: translateY(-5px);
 }
 .btn.btn2{
@@ -221,4 +221,8 @@ form .btn2{
 #map {
     height:200px;
     width:350px;
+}
+.mapTitle {
+    font: sans-serif;
+    font-size: medium;
 }
