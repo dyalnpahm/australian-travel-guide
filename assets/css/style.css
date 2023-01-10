@@ -40,6 +40,7 @@
     padding-left: 1.5%;
     font-size: 40px;
     font-family: 'Oleo Script', cursive;
+    text-align: center;
 
 }
 
@@ -51,7 +52,11 @@
     vertical-align: bottom;
 }
 
-
+.youtube {
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+}
 
 
 
