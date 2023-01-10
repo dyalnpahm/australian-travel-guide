@@ -203,3 +203,7 @@ form .btn2{
     height:200px;
     width:350px;
 }
+.mapTitle {
+    font: sans-serif;
+    font-size: medium;
+}
