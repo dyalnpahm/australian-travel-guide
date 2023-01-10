@@ -22,6 +22,8 @@
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
 
+</body>
+
 <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
   <a href="index.html" class="navbar-brand mb-0 h1">
     TrAUvel
@@ -163,6 +165,9 @@ id="navbarNav">
                   <a href="https://www.instagram.com/"><i class="fa fa-brands fa-instagram"></i></a>
                   <a href="https://www.linkedin.com/"><i class="fa fa-brands fa-linkedin"></i></a>
               </div>
+              <h1>Map to the cities</h1>
+              <div id="map"></div>
+              
           </div>
           <div class="contact-right">
               <form name="submit-to-google-sheet">
@@ -180,7 +185,10 @@ id="navbarNav">
   </div>
 </div>
 <script src="js/script.js"></script>
- 
+<script src="js/map.js"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo00M93q-rQlhbyht46LazUaS_OAncYFQ&callback=initMap">
+</script>
 
 
 
