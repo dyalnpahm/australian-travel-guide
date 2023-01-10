@@ -1,3 +1,16 @@
+function onYouTubeIframeAPIReady() {
+  // create the YouTube player
+  player = new YT.Player('player', {
+    height: '360',
+    width: '640',
+    videoId: 'o6pm5zyOUnE',
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+}
+
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
