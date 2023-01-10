@@ -41,6 +41,7 @@
     font-size: 40px;
     font-family: 'Oleo Script', cursive;
     text-align: center;
+    text-align: center;
 
 }
 
@@ -58,12 +59,10 @@
     border-radius: 15px;
 }
 
-
-
 .row img{
 	width: 382px ; /*WIDTH 90% HEIGHT 95%*/
 	height: 500px ;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 	 
