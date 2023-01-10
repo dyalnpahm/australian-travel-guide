@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/css/sydney.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -122,6 +123,46 @@
             <p>In addition to its natural beauty, Sydney is also home to a rich cultural scene. The Art Gallery of New South Wales, the Australian Museum, and the Sydney Opera House are just a few of the many cultural attractions you can visit in Sydney.</p>
           </div>
         </div>
+        <!---contact form-->
+
+        <div id="contact">
+          <div class="container">
+              <div class="row">
+                  <div class="contact-left">
+                      <h1 class="sub-title">Contact Us</h1>
+                      <p><i class="fa fa-solid fa-paper-plane"></i>dyalnpahm@gmail.com</p>
+                      <p><i class="fa fa-solid fa-phone"></i>0470422539</p>
+                      <div class="social-icons">
+                          <a href="https://www.facebook.com/"><i class="fa fa-brands fa-facebook"></i></a>
+                          <a href="https://twitter.com/"><i class="fa fa-brands fa-twitter-square"></i></a>
+                          <a href="https://www.instagram.com/"><i class="fa fa-brands fa-instagram"></i></a>
+                          <a href="https://www.linkedin.com/"><i class="fa fa-brands fa-linkedin"></i></a>
+                      </div>
+                      <h1 class="MapTitle">Map to the cities</h1>
+                      <div id="map"></div>
+                      
+                  </div>
+                  <div class="contact-right">
+                      <form name="submit-to-google-sheet">
+                          <input type="text" name="Name" placeholder="Your Name" required>
+                          <input type="email" name="Email" placeholder="Your Email" required>
+                          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                          <button type="submit" class="btn btn2">Submit</button>
+                      </form>
+                      <span id="msg"></span>
+                  </div>
+              </div>
+          </div>
+          <div class="copyright">
+              <p>Copyright <i class="fa fa-regular fa-copyright"></i> TrAUvel</p>
+          </div>
+        </div>
+
+        <script src="js/script.js"></script>
+        <script src="js/map.js"></script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo00M93q-rQlhbyht46LazUaS_OAncYFQ&callback=initMap">
+        </script>
         <script src="js/script.js"></script>
       </main>
 
